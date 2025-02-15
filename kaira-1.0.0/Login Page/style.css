@@ -8,7 +8,6 @@ html, body{
     height: 100%;
     width: 100%;
 }
-
 body {
     /* background-color: #1e47d3; */
     background: linear-gradient(to right, #667eea, #764ba2);
@@ -91,6 +90,7 @@ body {
     font-size: 18px;
 }
 
+/* register css start */
 .register-container {
     background-color: #fff;
     padding: 20px;
@@ -101,7 +101,7 @@ body {
     color: white;
 }
 
-h1 {
+.register-container h1 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -110,12 +110,12 @@ h1 {
     margin-bottom: 15px;
 }
 
-label {
+.register-container label {
     display: block;
     margin-bottom: 5px;
 }
 
-input {
+.register-container input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
@@ -134,7 +134,7 @@ input {
     cursor: pointer;
 }
 
-button {
+.register-container button {
     width: 100%;
     padding: 10px;
     background-color: #28a745;
@@ -144,7 +144,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.register-container button:hover {
     background-color: #218838;
 }
 
@@ -207,4 +207,83 @@ button:hover {
     margin-left: 150px;
     display: block;
     object-fit: contain;
+}
+
+/* checkout css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    background-color: #2C2F48;
+    color: white;
+
+}
+.billing-details, .order-summary {
+    flex: 1;
+    padding: 20px;
+}
+.order-summary {
+    border-left: 2px solid #ddd;
+}
+.container h2 {
+    /* color: #333; */
+    text-align: center;
+}
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.container label {
+    display: block;
+    margin: 10px 0;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.summary p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.coupon-section {
+    display: flex;
+    margin-top: 10px;
+}
+.coupon-section input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.coupon-section button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.place-order {
+    width: 100%;
+    padding: 12px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
 }
