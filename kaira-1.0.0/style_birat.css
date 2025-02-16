@@ -1,4 +1,4 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,18 +7,15 @@
 html, body{
     height: 100%;
     width: 100%;
-}
-body {
-    /* background-color: #1e47d3; */
-    background: linear-gradient(to right, #667eea, #764ba2);
-    /* background-color: #2C2F48; */
-    display: flex;
+} */
+/* .cover_part {
+    box-sizing: border-box;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-}
+}  */
 .login-container {
     background: white;
     width: 450px;
@@ -210,7 +207,12 @@ body {
 }
 
 /* checkout css */
-.container {
+.container_center {
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100vh;
+    margin: 0; */
+    font-family: Arial, sans-serif;
     display: flex;
     flex-wrap: wrap;
     background: white;
@@ -230,18 +232,18 @@ body {
 .order-summary {
     border-left: 2px solid #ddd;
 }
-.container h2 {
+.container_center h2 {
     /* color: #333; */
     text-align: center;
 }
-.container input {
+.container_center form input {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-.container label {
+.container_center label {
     display: block;
     margin: 10px 0;
 }

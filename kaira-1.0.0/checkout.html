@@ -21,7 +21,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="lib/slick/slick.css" rel="stylesheet">
   <link href="lib/slick/slick-theme.css" rel="stylesheet">
-  <link href="css copy/style.css" rel="stylesheet">
+  <link href="style_birat.css" rel="stylesheet">
   <!-- end -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -233,7 +233,7 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 gap-1 gap-md-5 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link" href="#" id="" 
+                  <a class="nav-link" href="index.html" id="" 
                     aria-haspopup="true" aria-expanded="false">Home</a>
                 </li>
                 
@@ -255,10 +255,13 @@
                       <a href="index.html" class="dropdown-item item-anchor">My Account </a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Checkout </a>
+                      <a href="Login Page/checkout.html" class="dropdown-item item-anchor">Checkout </a>
                     </li>
                     <li>
-                      <a href="index.html" class="dropdown-item item-anchor">Login & Register </a>
+                      <a href="Login Page/login.html" class="dropdown-item item-anchor">Login </a>
+                    </li>
+                    <li>
+                      <a href="Login Page/register.html" class="dropdown-item item-anchor">Register </a>
                     </li>
                   </ul>
                 </li>
@@ -312,178 +315,47 @@
     </div>
   </nav>
 
-        
-        <!-- Breadcrumb Start -->
-        <div class="breadcrumb-wrap">
-            <div class="container-fluid">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Products</a></li>
-                    <li class="breadcrumb-item active">Cart</li>
-                </ul>
-            </div>
+    <div class="container_center">
+        <div class="billing-details">
+            <h2>Billing Details</h2>
+            <form id="billing-form" onsubmit="return validateForm()">
+                <input type="text" id="first-name" placeholder="First Name*" required>
+                <input type="text" id="company-name" placeholder="Company Name">
+                <input type="text" id="street-address" placeholder="Street Address*" required>
+                <input type="text" id="apartment" placeholder="Apartment, floor, etc. (optional)">
+                <input type="text" id="city" placeholder="Town/City*" required>
+                <input type="tel" id="phone" placeholder="Phone Number*" required pattern="[0-9]{10}">
+                <input type="email" id="email" placeholder="Email Address*" required>
+                <label><input type="checkbox"> Save this information for faster check-out next time</label>
+                <button type="submit" class="place-order">Place Order</button>
+            </form>
         </div>
-        <!-- Breadcrumb End -->
-        
-       <!-- Cart Start -->
-       <div class="cart-page">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="cart-page-inner">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th>Product</th>
-                                        <th>Price</th>
-                                        <th>Quantity</th>
-                                        <th>Total</th>
-                                        <th>Remove</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="align-middle">
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="img/product-1.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="img/product-2.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="img/product-3.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="img/product-4.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="img">
-                                                <a href="#"><img src="img/product-5.jpg" alt="Image"></a>
-                                                <p>Product Name</p>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td>
-                                            <div class="qty">
-                                                <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="text" value="1">
-                                                <button class="btn-plus"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </td>
-                                        <td>$99</td>
-                                        <td><button><i class="fa fa-trash"></i></button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="cart-page-inner">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="coupon">
-                                    <input type="text" placeholder="Coupon Code">
-                                    <button>Apply Code</button>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="cart-summary">
-                                    <div class="cart-content">
-                                        <h1>Cart Summary</h1>
-                                        <p>Sub Total<span>$99</span></p>
-                                        <p>Shipping Cost<span>$1</span></p>
-                                        <h2>Grand Total<span>$100</span></h2>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <button>Update Cart</button>
-                                        <button>Checkout</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="item">
+                <span>LCD Monitor</span>
+                <span>$650</span>
+            </div>
+            <div class="item">
+                <span>H1 Gamepad</span>
+                <span>$1100</span>
+            </div>
+            <div class="summary">
+                <p>Subtotal: <span>$1750</span></p>
+                <p>Shipping: <span>Free</span></p>
+                <p>Total: <span>$1750</span></p>
+            </div>
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="bank"> Bank</label>
+                <label><input type="radio" name="payment" value="cod" checked> Cash on delivery</label>
+            </div>
+            <div class="coupon-section">
+                <input type="text" id="coupon-code" placeholder="Coupon Code">
+                <button onclick="applyCoupon()">Apply Coupon</button>
             </div>
         </div>
     </div>
-    <!-- Cart End -->
-     <!-- Brand Start -->
-<div class="brand">
-    <div class="container-fluid">
-        <div class="brand-slider">
-            <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
-            <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
-        </div>
-    </div>
-</div>
-<!-- Brand End -->
-        
-       <!-- instagram section -->
+    <!-- instagram section -->
   <section class="instagram position-relative">
     <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
       <a href="https://www.instagram.com/templatesjungle/" class="btn btn-dark px-5">Follow us on Instagram</a>
@@ -669,7 +541,7 @@
   <script src="lib/slick/slick.min.js"></script>
   
   <!-- Template Javascript -->
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
   <script src="js/jquery.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/SmoothScroll.js"></script>
@@ -678,6 +550,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
+  <script src="script.js"></script>
   
 </body>
 
