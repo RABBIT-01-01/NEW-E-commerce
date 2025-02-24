@@ -1,0 +1,12 @@
+{
+    "name": "Sweater",
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=2010&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "brand": "",
+    "stock": 4,
+    "category": "choose from :-Mens Womens  Children",
+    "price": 7000,
+    "sale_price": 5000,
+    "detail": "A perfect woolen sweater for winter.",
+    "is_featured": false,
+    "inventory_value": null
+}
