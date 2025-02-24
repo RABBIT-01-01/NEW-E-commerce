@@ -1394,7 +1394,53 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
-  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            document.querySelector(".cart-count").innerText = `(${totalItems})`;
+        }
+    
+        updateCartCount(); // Update on page load
+    });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          let cart = JSON.parse(localStorage.getItem("cart")) || []; 
+          updateCartCount();
+      
+          document.querySelectorAll(".add-to-cart").forEach(button => {
+              button.addEventListener("click", function (event) {
+                  event.preventDefault();
+      
+                  let product = {
+                      name: this.getAttribute("data-name"),
+                      price: parseFloat(this.getAttribute("data-price")),
+                      image: this.getAttribute("data-image"),
+                      quantity: 1
+                  };
+      
+                  let existingItem = cart.find(item => item.name === product.name);
+                  if (existingItem) {
+                      existingItem.quantity++;
+                  } else {
+                      cart.push(product);
+                  }
+      
+                  localStorage.setItem("cart", JSON.stringify(cart));
+                  updateCartCount();
+                  alert("Product added to cart!");
+              });
+          });
+      
+          function updateCartCount() {
+              let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+              document.querySelector(".wishlist-count").innerText = `(${totalItems})`;
+          }
+      });
+      </script>
+      
 </body>
 
 </html>

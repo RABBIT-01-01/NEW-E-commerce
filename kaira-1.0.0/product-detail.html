@@ -682,5 +682,17 @@
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                function updateCartCount() {
+                    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+                    let totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                    document.querySelector(".cart-count").innerText = `(${totalItems})`;
+                }
+            
+                updateCartCount(); // Update on page load
+            });
+            </script>
+            
     </body>
 </html>

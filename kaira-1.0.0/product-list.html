@@ -277,8 +277,10 @@
               </a>
             </li>
             <li class="d-none d-lg-block">
-              <a href="cart.html" class="text-uppercase mx-3">Cart <span class="wishlist-count">(0)</span>
-              </a>
+              <a href="cart.html" class="text-uppercase mx-3">
+                Cart <span class="cart-count">(0)</span>
+            </a>
+            
             </li>
 
             <!-- icon for mini windown navbar -->
@@ -373,33 +375,92 @@
                     </div>
                     
                     <div class="col-md-4">
-                        <div class="product-item">
-                            <div class="product-title">
-                                <a href="#">Product Name</a>
-                                <div class="ratting">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                            </div>
-                            <div class="product-image">
-                                <a href="product-detail.html">
-                                    <img src="img/product-1.jpg" alt="Product Image">
-                                </a>
-                                <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                    <a href="#"><i class="fa fa-heart"></i></a>
-                                    <a href="#"><i class="fa fa-search"></i></a>
-                                </div>
-                            </div>
-                            <div class="product-price">
-                                <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
-                            </div>
-                        </div>
-                    </div>
+                      <div class="product-item">
+                          <div class="product-title">
+                              <a href="#">Product A</a> <!-- Changed name -->
+                              <div class="ratting">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                              </div>
+                          </div>
+                          <div class="product-image">
+                              <a href="product-detail.html">
+                                  <img src="img/product-1.jpg" alt="Product Image">
+                              </a>
+                              <div class="product-action">
+                                  <a href="cart.html" class="add-to-cart" data-name="Product A" data-price="99" data-image="img/product-1.jpg"><i class="fa fa-cart-plus"></i></a>
+                                  <a href="#"><i class="fa fa-heart"></i></a>
+                                  <a href="#"><i class="fa fa-search"></i></a>
+                              </div>
+                          </div>
+                          <div class="product-price">
+                              <h3><span>$</span>99</h3>
+                              <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                      <div class="product-item">
+                          <div class="product-title">
+                              <a href="#">Product B</a> <!-- Changed name -->
+                              <div class="ratting">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                              </div>
+                          </div>
+                          <div class="product-image">
+                              <a href="product-detail.html">
+                                  <img src="img/product-2.jpg" alt="Product Image">
+                              </a>
+                              <div class="product-action">
+                                  <a href="cart.html" class="add-to-cart" data-name="Product B" data-price="120" data-image="img/product-2.jpg"><i class="fa fa-cart-plus"></i></a>
+                                  <a href="#"><i class="fa fa-heart"></i></a>
+                                  <a href="#"><i class="fa fa-search"></i></a>
+                              </div>
+                          </div>
+                          <div class="product-price">
+                              <h3><span>$</span>120</h3>
+                              <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                      <div class="product-item">
+                          <div class="product-title">
+                              <a href="#">Product C</a> <!-- Changed name -->
+                              <div class="ratting">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                              </div>
+                          </div>
+                          <div class="product-image">
+                              <a href="product-detail.html">
+                                  <img src="img/product-3.jpg" alt="Product Image">
+                              </a>
+                              <div class="product-action">
+                                  <a href="cart.html" class="add-to-cart" data-name="Product C" data-price="150" data-image="img/product-3.jpg"><i class="fa fa-cart-plus"></i></a>
+                                  <a href="#"><i class="fa fa-heart"></i></a>
+                                  <a href="#"><i class="fa fa-search"></i></a>
+                              </div>
+                          </div>
+                          <div class="product-price">
+                              <h3><span>$</span>150</h3>
+                              <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                          </div>
+                      </div>
+                  </div>
+                  
                     <div class="col-md-4">
                         <div class="product-item">
                             <div class="product-title">
@@ -417,14 +478,14 @@
                                     <img src="img/product-2.jpg" alt="Product Image">
                                 </a>
                                 <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="cart.html" class="add-to-cart" data-name="Product Name" data-price="99" data-image="img/product-2.jpg"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
                                     <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -445,14 +506,14 @@
                                     <img src="img/product-3.jpg" alt="Product Image">
                                 </a>
                                 <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="cart.html" class="add-to-cart" data-name="Product Name" data-price="99" data-image="img/product-3.jpg"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
                                     <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -473,14 +534,14 @@
                                     <img src="img/product-4.jpg" alt="Product Image">
                                 </a>
                                 <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="cart.html" class="add-to-cart" data-name="Product Name" data-price="99" data-image="img/product-4.jpg"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
                                     <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -501,14 +562,14 @@
                                     <img src="img/product-5.jpg" alt="Product Image">
                                 </a>
                                 <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="cart.html" class="add-to-cart" data-name="Product Name" data-price="99" data-image="img/product-5.jpg"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
                                     <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -529,14 +590,14 @@
                                     <img src="img/product-6.jpg" alt="Product Image">
                                 </a>
                                 <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="cart.html" class="add-to-cart" data-name="Product Name" data-price="99" data-image="img/product-6.jpg"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
                                     <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -557,14 +618,14 @@
                                     <img src="img/product-7.jpg" alt="Product Image">
                                 </a>
                                 <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="cart.html" class="add-to-cart" data-name="Product Name" data-price="99" data-image="img/product-7.jpg"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
                                     <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -585,14 +646,14 @@
                                     <img src="img/product-8.jpg" alt="Product Image">
                                 </a>
                                 <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="cart.html" class="add-to-cart" data-name="Product Name" data-price="99" data-image="img/product-8.jpg"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
                                     <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -613,14 +674,14 @@
                                     <img src="img/product-9.jpg" alt="Product Image">
                                 </a>
                                 <div class="product-action">
-                                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="cart.html" class="add-to-cart" data-name="Product Name" data-price="99" data-image="img/product-9.jpg"><i class="fa fa-cart-plus"></i></a>
                                     <a href="#"><i class="fa fa-heart"></i></a>
                                     <a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
                             <div class="product-price">
                                 <h3><span>$</span>99</h3>
-                                <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Buy Now</a>
+                                <a class="btn" href="cart.html"><i class="fa fa-shopping-cart"></i>Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -979,6 +1040,8 @@
     </div>
   </footer>
 
+
+
    <!-- Back to Top -->
    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <!-- JavaScript Libraries -->
@@ -997,6 +1060,39 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
+
+    <!-- Add to Cart Gare paxi Cart ko page open hunxa -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+        document.querySelectorAll(".add-to-cart").forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent link navigation
+    
+                let product = {
+                    name: this.getAttribute("data-name"),
+                    price: this.getAttribute("data-price"),
+                    image: this.getAttribute("data-image"),
+                    quantity: 1,
+                };
+    
+                // Check if item already exists in cart
+                let existingItem = cart.find(item => item.name === product.name);
+                if (existingItem) {
+                    existingItem.quantity++; // Increase quantity if exists
+                } else {
+                    cart.push(product); // Add new product
+                }
+    
+                localStorage.setItem("cart", JSON.stringify(cart)); // Save to localStorage
+                alert("Product added to cart!");
+                window.location.href = "cart.html"; // Redirect to cart
+            });
+        });
+    });
+    </script>
+    
   
 </body>
 
