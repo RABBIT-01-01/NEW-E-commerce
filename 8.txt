@@ -1,0 +1,12 @@
+{
+    "name": "Party Dress",
+    "image": "https://images.unsplash.com/flagged/photo-1585052201332-b8c0ce30972f?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "brand": "",
+    "stock": 50,
+    "category": "choose from :-Mens Womens  Children",
+    "price": 900,
+    "sale_price": 700,
+    "detail": "A high quality green velvet dress ,especially for women of all sizes.",
+    "is_featured": false,
+    "inventory_value": null
+}
